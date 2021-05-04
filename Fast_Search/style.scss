@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+$mainColor: #fcfcff;
+$borderColor: #5b96b6;
+$mainFont: 'Source Sans Pro', sans-serif;
+$fontColor: #70857f;
+
+body {
+    background-color: $mainColor;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 70px auto;
+    padding: 0 20px;
+    max-width: 500px;
+    width: 100%;   
+}
+.input-area {
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 20px;
+
+    i {
+        position: absolute;
+        margin-left: 20px;
+        font-size: 12px;
+        color: #ababad;
+    }
+input {
+    border: 11px solid $borderColor;
+    height: 50px;
+    width: 100%;
+    padding-left: 30px;
+    font-family: $mainFont;
+    color: $fontColor;
+    font-weight: 700;
+    }
+}
+
+.item-area {
+    display: flex;
+    margin-top: 10px;
+    max-width: 370px;
+    width: 100%;
+    align-items: center;
+    border-bottom: 1px solid #e5e5ee;
+    padding-bottom: 10px;
+
+    img {
+        width: 60px;
+        height: 60px;
+    }
+    a {
+        text-decoration: none;
+        margin-left: 10px;
+        width: 100%;
+        font-family: $mainFont;
+        color: $fontColor;
+        font-weight: 600;
+    }
+    
+}
+
+

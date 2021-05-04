@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$mainFont: 'Roboto', sans-serif;
+
+.inline-editor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    flex-direction: column;
+}
+.popup-input {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+
+    input {
+        border: 10px solid #5291aa;
+        border-radius: 2px;
+        width: 350px;
+        height: 50px;
+        color: #4e905c;
+        font-size: 20px;
+        text-align: center;
+        font-family: $mainFont;
+    }
+    span {
+        color: #5291aa;
+        margin-top: -8px;
+        text-align: center;
+        font-size: 22px;
+    }
+}
+.text-field {
+    color: #6f7c81;
+    font-size: 30px;
+    cursor: default;
+    font-weight: 400;
+    font-family: $mainFont;
+    display: flex;
+    align-items: center;
+
+    i {
+        transform: rotateY(180deg);
+        margin-right: 10px;
+        font-size: 20px;
+    }
+}
+
+.show-hide.ng-hide {
+    opacity: 0;
+  }
+
+  .clicked-element {
+    opacity: 1;
+  }

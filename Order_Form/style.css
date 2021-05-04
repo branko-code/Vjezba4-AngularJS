@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding: 50px 20px;
+  margin-top: 50px;
+  max-width: 550px;
+  width: 100%;
+  background-color: #5f9bb8;
+  border-radius: 1px;
+}
+
+.main-container h3 {
+  font-family: "Dancing Script", cursive;
+  font-size: 55px;
+  font-weight: 700;
+  color: white;
+}
+
+.main-container ul {
+  margin: 20px 0 10px 0;
+  max-width: 400px;
+  width: 100%;
+  list-style-type: none;
+}
+
+.main-container ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 7px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.main-container ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+hr {
+  max-width: 400px;
+  width: 100%;
+}
+
+.price-area {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 350px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+}
+
+.danger {
+  background-color: #e15689;
+}
+
+.success {
+  background-color: #8dc868;
+}
+/*# sourceMappingURL=style.css.map */

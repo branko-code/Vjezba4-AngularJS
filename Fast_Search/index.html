@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Search</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+</head>
+<body>
+    
+    <div ng-app="myApp" ng-controller="filterCtrl" class="container">
+        <div class="input-area">
+            <i class="fa fa-search"></i>
+            <input ng-model="searchFilter.title" type="text" placeholder="Enter your search terms">
+        </div>
+        <div class="item-area" ng-repeat="item in records | filter:searchFilter">
+            <img ng-src="{{item.image}}" alt="">
+            <a href="{{item.url}}" target="_blank">{{item.title}}</a>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
